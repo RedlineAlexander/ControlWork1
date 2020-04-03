@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 /*
  * Ваша задача – сделать приближенную к реальности логически выстроенную структуру любого объекта/процесса на ваше усмотрение. Особенное внимание при проверке будет обращено на логичность построения структуры.
 Во время выполнения вы должны использовать все ваши знания, а именно:
@@ -29,6 +30,22 @@ namespace ControlWork1
     };
   public abstract  class RailTransport : Transport
     {
+        public void LINQLogicPlanePassengerFly()
+        {
+            // Specify the data source.
+            int[] scoresPassengers = new int[] { 97, 92, 81, 60,35,65,22 };
 
+            // Define the query expression.
+            IEnumerable<int> scoreQuery =
+                from score in scoresPassengers
+                where score > 80
+                select score;
+
+            // Execute the query.
+            foreach (int i in scoreQuery)
+            {
+                Console.Write(i + " ");
+            }
+        }
     }
 }

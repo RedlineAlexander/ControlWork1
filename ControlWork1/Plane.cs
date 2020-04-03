@@ -20,13 +20,10 @@ using System.Text;
  */
 namespace ControlWork1
 {
-    class Passengers : Train
+    public delegate   void  StillAndAfterDeparture();
+    
+    class Plane : FlyTransport
     {
-        public int QuantityPassenger { get; set; }
-       public List<string> PassengersWagonsAll { get; set; }
-
-
-     
 
     }
 }

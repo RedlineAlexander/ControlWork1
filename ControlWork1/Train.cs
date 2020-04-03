@@ -4,8 +4,14 @@ using System.Text;
 
 namespace ControlWork1
 {
-    class Train : RailTransport
+    public class Train : RailTransport
     {
+
+        //public static int PassengerCount(this String str)
+        //{
+      //      return 0;
+       // }
+
 
     }
 }

@@ -27,5 +27,7 @@ namespace ControlWork1
         public Dictionary<int, string> SpeedPlains { get; set; }
 
 
+
+
     }
 }

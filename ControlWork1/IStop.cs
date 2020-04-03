@@ -6,5 +6,6 @@ namespace ControlWork1
 {
     interface IStop
     {
+        public void TransportStop();
     }
 }

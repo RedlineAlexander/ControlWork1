@@ -6,5 +6,7 @@ namespace ControlWork1
 {
     interface IMove
     {
+        public void DetailOfMove();
+        public int CoordinateOfMOve();
     }
 }
