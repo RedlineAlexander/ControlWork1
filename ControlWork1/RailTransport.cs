@@ -21,30 +21,45 @@ using System.Linq;
  */
 namespace ControlWork1
 {
-    enum Railway
+   public enum Railway
     {
         ElectricityTrain,
         Locomotives,
         PassengerTrain,
         StoreTrain
     };
-  public abstract  class RailTransport : Transport
+    public abstract class RailTransport : Transport
     {
-        public void LINQLogicPlanePassengerFly()
+        public Railway ElectricityTrain { get; set; }
+        public RailTransport(Railway railway) : base (){
+
+
+            ElectricityTrain = railway;
+         }
+        public void LINQLogicRailwayPassengersRun()
         {
-            // Specify the data source.
-            int[] scoresPassengers = new int[] { 97, 92, 81, 60,35,65,22 };
-
-            // Define the query expression.
-            IEnumerable<int> scoreQuery =
-                from score in scoresPassengers
-                where score > 80
-                select score;
-
-            // Execute the query.
-            foreach (int i in scoreQuery)
+            try
             {
-                Console.Write(i + " ");
+                int[] scoresPassengers = new int[] { 97, 92, 81, 60, 35, 65, 22 };
+
+                IEnumerable<int> scoreQuery =
+                    from score in scoresPassengers
+                    where score > 80
+                    select score;
+
+                // Execute the query.
+                foreach (int i in scoreQuery)
+                {
+                    Console.Write(i + " ");
+                }
+            }
+            catch(IndexOutOfRangeException e)
+            {
+                Console.WriteLine("Что -то пошло не так , сейчас сойдем с рельс ");
+            }
+            finally
+            {
+                Console.WriteLine("Счастливого пути");
             }
         }
     }
