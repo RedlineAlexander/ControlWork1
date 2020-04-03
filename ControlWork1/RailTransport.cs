@@ -61,6 +61,9 @@ namespace ControlWork1
             {
                 Console.WriteLine("Счастливого пути");
             }
+
+
+
         }
     }
 }

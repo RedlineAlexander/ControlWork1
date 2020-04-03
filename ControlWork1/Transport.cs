@@ -22,6 +22,10 @@ namespace ControlWork1
 {
     public abstract class Transport : IMove, ITurn, IStop
     {
+        public int PointA { get; set; }
 
+
+        public int PointB { get; set; }
+        public void AnonymousFunctionOfTransport() => Console.WriteLine("Никуда ты пустышка не поедешь ");
     }
 }
