@@ -19,7 +19,14 @@ using System.Text;
 13. Делегаты + анонимные методы.
  */
 namespace ControlWork1
+
 {
+    public delegate void EmptyTransportPhase();
+
+    enum CheckForTruTransport{
+        TypeOfTransport,
+        NonOfTransportItsPassenger
+    }
     public abstract class Transport : IMove, ITurn, IStop
     {
         public int PointA { get; set; }
