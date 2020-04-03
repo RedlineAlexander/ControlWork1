@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
 /*
  * Ваша задача – сделать приближенную к реальности логически выстроенную структуру любого объекта/процесса на ваше усмотрение. Особенное внимание при проверке будет обращено на логичность построения структуры.
 Во время выполнения вы должны использовать все ваши знания, а именно:
@@ -21,10 +20,8 @@ using System.Text;
  */
 namespace ControlWork1
 {
-   public abstract class FlyTransport : Transport
+    class Passengers : Train
     {
-        public List<string> ModelsPlains { get; set; }
-        public Dictionary<int, string> SpeedPlains { get; set; }
 
 
     }

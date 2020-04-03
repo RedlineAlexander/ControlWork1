@@ -27,7 +27,7 @@ namespace ControlWork1
         PassengerTrain,
         StoreTrain
     };
-  public abstract  class RailTransport<T> : Transport
+  public abstract  class RailTransport : Transport
     {
 
     }
