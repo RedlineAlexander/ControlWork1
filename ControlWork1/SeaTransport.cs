@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ControlWork1
 {
-    class SeaTransport
+    public abstract class SeaTransport : Transport
     {
+
     }
 }

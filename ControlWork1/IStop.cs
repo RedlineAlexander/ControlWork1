@@ -4,8 +4,7 @@ using System.Text;
 
 namespace ControlWork1
 {
-   public abstract class FlyTransport : Transport
+    interface IStop
     {
-
     }
 }

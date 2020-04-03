@@ -20,7 +20,8 @@ using System.Text;
  */
 namespace ControlWork1
 {
-    class Transport
+    public abstract class Transport : IMove, ITurn, IStop
     {
+
     }
 }
